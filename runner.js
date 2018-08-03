@@ -7,7 +7,6 @@ let albums = []
 TRACKS.forEach((track) => {
   // find an album by matching the album.id with track[:album_id]
   let album = albums.find(album => { return album.album_id === track.album_id })
-
   // if the album hasn't been added to the albums array yet, add it
   if (!album) {
     album = new Album(track.album_id, track.album_name, track.artists)
