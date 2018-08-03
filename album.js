@@ -16,6 +16,7 @@ class Album {
     let minutes = total_ms/60000;
     return minutes.toFixed(2);
   }
+  
   summary() {
     let albumsummary = "";
     albumsummary += `Name: ${this.name}\n`;
